@@ -153,9 +153,164 @@ def main():
     else:
         print("  SC8P052 not found!")
 
+    # Query 5: Find all C* tables (likely programming tables)
+    print("\n=== All C* tables (potential programming parameters) ===")
+    cols, rows = execute_query("SELECT name FROM sqlite_master WHERE type='table' AND name LIKE 'C%' ORDER BY name")
+    if rows:
+        for row in rows:
+            print(f"  {row[0]}")
+
+    # Query 6: Check CXYD table structure and data for series 59 (SC8P052 series)
+    print("\n=== CXYD table (Programming parameters) ===")
+    cols, rows = execute_query("PRAGMA table_info(CXYD)")
+    if cols:
+        print("Columns:")
+        for row in rows:
+            print(f"  {row}")
+    
+    print("\nCXYD data for series 59 (SC8P052):")
+    cols, rows = execute_query("SELECT * FROM CXYD WHERE ID=59 OR rowid=59 LIMIT 5")
+    if cols and rows:
+        print(f"Columns: {cols}")
+        for row in rows:
+            print(f"  {row}")
+    else:
+        # Try without WHERE clause
+        cols, rows = execute_query("SELECT * FROM CXYD LIMIT 3")
+        if cols and rows:
+            print(f"Columns: {cols}")
+            for row in rows:
+                print(f"  {row}")
+
+    # Query 7: Check CFMT table (Format)
+    print("\n=== CFMT table (Format structure) ===")
+    cols, rows = execute_query("PRAGMA table_info(CFMT)")
+    if cols:
+        print("Columns:")
+        for row in rows:
+            print(f"  {row}")
+    
+    print("\nCFMT data:")
+    cols, rows = execute_query("SELECT * FROM CFMT LIMIT 5")
+    if cols and rows:
+        print(f"Columns: {cols}")
+        for row in rows:
+            print(f"  {row}")
+
+    # Query 8: Check CBW table (Byte width?)
+    print("\n=== CBW table ===")
+    cols, rows = execute_query("PRAGMA table_info(CBW)")
+    if cols:
+        print("Columns:")
+        for row in rows:
+            print(f"  {row}")
+    
+    print("\nCBW data:")
+    cols, rows = execute_query("SELECT * FROM CBW LIMIT 5")
+    if cols and rows:
+        print(f"Columns: {cols}")
+        for row in rows:
+            print(f"  {row}")
+
+    # Query 9: Check CJY table
+    print("\n=== CJY table ===")
+    cols, rows = execute_query("PRAGMA table_info(CJY)")
+    if cols:
+        print("Columns:")
+        for row in rows:
+            print(f"  {row}")
+    
+    print("\nCJY data:")
+    cols, rows = execute_query("SELECT * FROM CJY LIMIT 5")
+    if cols and rows:
+        print(f"Columns: {cols}")
+        for row in rows:
+            print(f"  {row}")
+
+    # Query 10: Find timing-related columns
+    print("\n=== Tables with timing/delay columns ===")
+    cols, rows = execute_query("""
+        SELECT m.name as table_name, p.name as column_name 
+        FROM sqlite_master m 
+        JOIN pragma_table_info(m.name) p 
+        WHERE m.type='table' 
+        AND (p.name LIKE '%TIME%' OR p.name LIKE '%DELAY%' OR p.name LIKE '%CLK%' OR p.name LIKE '%FREQ%')
+        ORDER BY m.name
+    """)
+    if rows:
+        for row in rows:
+            print(f"  {row[0]}.{row[1]}")
+
+    # Query 11: Check CKDHM table
+    print("\n=== CKDHM table ===")
+    cols, rows = execute_query("PRAGMA table_info(CKDHM)")
+    if cols:
+        print("Columns:")
+        for row in rows:
+            print(f"  {row}")
+    
+    print("\nCKDHM data:")
+    cols, rows = execute_query("SELECT * FROM CKDHM LIMIT 5")
+    if cols and rows:
+        print(f"Columns: {cols}")
+        for row in rows:
+            print(f"  {row}")
+
+    # Query 12: Get row counts for all tables
+    print("\n=== Table row counts ===")
+    cols, rows = execute_query("SELECT name FROM sqlite_master WHERE type='table' ORDER BY name")
+    if rows:
+        for row in rows:
+            table_name = row[0]
+            count_cols, count_rows = execute_query(f"SELECT COUNT(*) FROM {table_name}")
+            if count_rows:
+                print(f"  {table_name}: {count_rows[0][0]} rows")
+
+    # Query 13: Check version table
+    print("\n=== version table ===")
+    cols, rows = execute_query("SELECT * FROM version")
+    if cols and rows:
+        print(f"Columns: {cols}")
+        for row in rows:
+            print(f"  {row}")
+
+    # Query 14: Check CJDZ table
+    print("\n=== CJDZ table ===")
+    cols, rows = execute_query("PRAGMA table_info(CJDZ)")
+    if cols:
+        print("Columns:")
+        for row in rows:
+            print(f"  {row}")
+    
+    print("\nCJDZ data:")
+    cols, rows = execute_query("SELECT * FROM CJDZ LIMIT 5")
+    if cols and rows:
+        print(f"Columns: {cols}")
+        for row in rows:
+            print(f"  {row}")
+
+    # Query 15: Check CJX table
+    print("\n=== CJX table ===")
+    cols, rows = execute_query("PRAGMA table_info(CJX)")
+    if cols:
+        print("Columns:")
+        for row in rows:
+            print(f"  {row}")
+    
+    print("\nCJX data:")
+    cols, rows = execute_query("SELECT * FROM CJX LIMIT 5")
+    if cols and rows:
+        print(f"Columns: {cols}")
+        for row in rows:
+            print(f"  {row}")
+
     # Close database
     dll.sqlite_close()
-    print("\nDatabase closed.")
+    print("\n" + "="*60)
+    print("DATABASE ANALYSIS COMPLETE")
+    print("="*60)
+    print("\nPlease share this output for ICSP protocol analysis!")
+    print("Focus on any binary/hex data in CXYD, CFMT, CBW, CJY tables.")
 
 if __name__ == "__main__":
     main()
