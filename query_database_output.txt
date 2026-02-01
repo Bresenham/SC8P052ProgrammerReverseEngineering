@@ -1,0 +1,364 @@
+C:\Users\maxim\Downloads\SCMCU_IDE_V2.00.16\SCMCU_IDE_V2.00.16>python32 query_database.py
+Using DLL: C:\Users\maxim\Downloads\SCMCU_IDE_V2.00.16\SCMCU_IDE_V2.00.16\SCMCU_Writer_V9.01.15_20250521\library\SqlciperDll.dll
+Using DB: C:\Users\maxim\Downloads\SCMCU_IDE_V2.00.16\SCMCU_IDE_V2.00.16\SCMCU_Writer_V9.01.15_20250521\data\database.db
+Connected to database successfully!
+
+=== Tables in database ===
+  sqlite_sequence
+  SCMCU_INTER
+  CBW
+  CFMT
+  SCMCU
+  CRS
+  TABLE_VDDTYPE
+  HCS
+  CJY
+  CQZCX
+  PBT
+  version
+  AINTER
+  CXYD
+  CJHX
+  TABLE_SERIES
+  CJYSZ
+  CKDHM
+  CXET
+  CWXJH
+  CBSD
+  MCU
+  CTTI
+  CAK
+  CLGT
+  CMC
+  CMIDEA_WQ_BARCODE
+  CMIDEA_SH
+  CMIDEA_SH_FCH
+  CSUPOR
+  CFY
+  IDE_TEST
+  CJX
+  SCMCU_DELETE
+  CFC
+  CFC_INT
+  CWT
+  CBD
+  CHR
+  CSHWS
+  COPPO
+  SCMCU_IDE
+  CMIDEA_HOME
+  CISW
+  CJY2025
+  CCX
+  MCU_INTER
+  CJDZ
+  CCM
+  CBSHX
+  CHR_ONLINE
+
+=== TABLE_SERIES (MCU series definitions) ===
+Columns: ['ID', 'NAME', 'ARCH', 'CRAFTS', 'EEBITNUM', 'VDDTYPE', 'VDDTYPE_SIM', 'CRCTYPE', 'ROM_START_ADDR', 'EE_START_ADDR', 'BREAK_LENGTH', 'ROM_PAGE_SIZE']
+  ['1', 'SC081', 'CMS89', 'FLASH', '8', '3', '3', '1', '0', '0', '4', None]
+  ['2', 'SC111', 'CMS69', 'FLASH', '14', '3', '3', '1', '0', '0', '4', None]
+  ['3', 'SC121', 'CMS89', 'FLASH', '16', '3', '3', '1', '0', '0', '4', None]
+  ['4', 'SC131', 'CMS89', 'FLASH', '16', '3', '3', '1', '0', '0', '4', None]
+  ['5', 'SC151', 'CMS89', 'FLASH', '8', '3', '3', '1', '0', '0', '4', None]
+  ['6', 'SC161', 'CMS69', 'FLASH', '0', '3', '3', '1', '0', '0', '4', None]
+  ['7', 'SC181', 'CMS89', 'FLASH', '8', '3', '3', '1', '0', '0', '4', None]
+  ['8', 'SC191', 'CMS69', 'FLASH', '14', '3', '3', '1', '0', '0', '4', None]
+  ['9', 'SC201', 'CMS89', 'FLASH', '0', '3', '3', '1', '0', '0', '4', None]
+  ['10', 'SC211', 'CMS89', 'FLASH', '8', '3', '3', '1', '0', '0', '4', None]
+  ['11', 'SC221', 'CMS89', 'FLASH', '8', '3', '3', '1', '0', '0', '4', None]
+  ['12', 'SC231', 'CMS89', 'FLASH', '8', '3', '3', '1', '0', '0', '4', None]
+  ['13', 'SC251', 'CMS69', 'FLASH', '14', '3', '3', '1', '0', '0', '4', None]
+  ['14', 'SC261', 'CMS89', 'FLASH', '8', '3', '3', '1', '0', '0', '4', None]
+  ['15', 'SC081B2', 'CMS89', 'FLASH', '8', '3', '3', '1', '0', '0', '4', None]
+  ['16', 'SC111B2', 'CMS69', 'FLASH', '14', '3', '3', '1', '0', '0', '4', None]
+  ['17', '52A1', 'CMS69', 'OTP', '0', '3', '3', '1', '0', '0', '4', None]
+  ['18', 'SC191A', 'CMS69', 'FLASH', '14', '3', '3', '1', '0', '0', '4', None]
+  ['19', 'SC301', 'CMS89', 'FLASH', '0', '3', '3', '1', '0', '0', '4', None]
+  ['20', 'SC18M08', 'CMS69', 'OMTP', '0', '2', '2', '1', '0', '0', '4', None]
+
+=== MCUs containing 'SC8P' ===
+MCU_NAME             SERIES_NAME     ARCH
+--------------------------------------------------
+SC8P051              CMHH90A1        CMS89
+SC8P052              CMHH68A1        CMS89
+SC8P052B             CMHH68A1        CMS89
+SC8P052B_A           CMHH91A1T       CMS89
+SC8P053              CMHH69A1        CMS89
+SC8P054              CMHH69A1        CMS89
+SC8P062              56A1            CMS89
+SC8P062BD            CMHH85A1        CMS89
+SC8P062_C            CMHH85A1        CMS89
+SC8P1710D            55A1            CMS89
+SC8P1710E            56A1            CMS89
+SC8P1711D            55A1            CMS89
+SC8P1711E            56A1            CMS89
+SC8P1712D            55A1            CMS89
+SC8P1712E            56A1            CMS89
+SC8P1712EA           56A1            CMS89
+SC8P1715             55A1            CMS89
+SC8P1715E            56A1            CMS89
+SC8P1762E            55A1            CMS89
+SC8P8022AD           CMHH82A1        CMS89
+SC8P8022D            55A1            CMS89
+SC8P8122AD           CMHH82A1        CMS89
+
+=== SC8P052 details ===
+  MCU_NAME: SC8P052
+  MCU_TYPE: 0x1BFF
+  MCU_SERIES: 59
+  MCU_PINNUM: 6
+  MCU_PINVCC: 5
+  MCU_PINGND: 2
+  MCU_PINDAT: 1
+  MCU_PINCLK: 3
+  MCU_ROM_SIZE: 1024
+  MCU_EEPROM_SIZE: 0
+  ID: 59
+  NAME: CMHH68A1
+  ARCH: CMS89
+  CRAFTS: OTP
+  EEBITNUM: 0
+  VDDTYPE: 1
+  VDDTYPE_SIM: 1
+  CRCTYPE: 1
+  ROM_START_ADDR: 0
+  EE_START_ADDR: 0
+  BREAK_LENGTH: 0
+  ROM_PAGE_SIZE: None
+
+=== All C* tables (potential programming parameters) ===
+  CAK
+  CBD
+  CBSD
+  CBSHX
+  CBW
+  CCM
+  CCX
+  CFC
+  CFC_INT
+  CFMT
+  CFY
+  CHR
+  CHR_ONLINE
+  CISW
+  CJDZ
+  CJHX
+  CJX
+  CJY
+  CJY2025
+  CJYSZ
+  CKDHM
+  CLGT
+  CMC
+  CMIDEA_HOME
+  CMIDEA_SH
+  CMIDEA_SH_FCH
+  CMIDEA_WQ_BARCODE
+  COPPO
+  CQZCX
+  CRS
+  CSHWS
+  CSUPOR
+  CTTI
+  CWT
+  CWXJH
+  CXET
+  CXYD
+
+=== CXYD table (Programming parameters) ===
+Columns:
+  ['0', 'MCU_NAME', 'TEXT', '1', None, '0']
+  ['1', 'MCU_TYPE', 'INTEGER', '1', None, '0']
+  ['2', 'MCU_SERIES', 'INTEGER', '1', None, '0']
+  ['3', 'MCU_PINNUM', 'INTEGER', '1', None, '0']
+  ['4', 'MCU_PINVCC', 'INTEGER', '1', None, '0']
+  ['5', 'MCU_PINGND', 'INTEGER', '1', None, '0']
+  ['6', 'MCU_PINDAT', 'INTEGER', '1', None, '0']
+  ['7', 'MCU_PINCLK', 'INTEGER', '1', None, '0']
+  ['8', 'MCU_ROM_SIZE', 'INTEGER', '1', None, '0']
+  ['9', 'MCU_EEPROM_SIZE', 'INTEGER', '1', None, '0']
+
+CXYD data for series 59 (SC8P052):
+Columns: ['MCU_NAME', 'MCU_TYPE', 'MCU_SERIES', 'MCU_PINNUM', 'MCU_PINVCC', 'MCU_PINGND', 'MCU_PINDAT', 'MCU_PINCLK', 'MCU_ROM_SIZE', 'MCU_EEPROM_SIZE']
+  ['MX5323', '0x2509', '2', '16', '11', '1', '12', '13', '2048', '0']
+  ['RF2418', '0x2509', '2', '16', '11', '1', '12', '13', '2048', '0']
+  ['RF2518', '0x2509', '2', '16', '11', '3', '12', '13', '2048', '0']
+
+=== CFMT table (Format structure) ===
+Columns:
+  ['0', 'MCU_NAME', 'TEXT', '1', None, '0']
+  ['1', 'MCU_TYPE', 'INTEGER', '1', None, '0']
+  ['2', 'MCU_SERIES', 'INTEGER', '1', None, '0']
+  ['3', 'MCU_PINNUM', 'INTEGER', '1', None, '0']
+  ['4', 'MCU_PINVCC', 'INTEGER', '1', None, '0']
+  ['5', 'MCU_PINGND', 'INTEGER', '1', None, '0']
+  ['6', 'MCU_PINDAT', 'INTEGER', '1', None, '0']
+  ['7', 'MCU_PINCLK', 'INTEGER', '1', None, '0']
+  ['8', 'MCU_ROM_SIZE', 'INTEGER', '1', None, '0']
+  ['9', 'MCU_EEPROM_SIZE', 'INTEGER', '1', None, '0']
+
+CFMT data:
+Columns: ['MCU_NAME', 'MCU_TYPE', 'MCU_SERIES', 'MCU_PINNUM', 'MCU_PINVCC', 'MCU_PINGND', 'MCU_PINDAT', 'MCU_PINCLK', 'MCU_ROM_SIZE', 'MCU_EEPROM_SIZE']
+  ['CMS32F059QN32', '0x0104', '2050', '32', '28', '12', '20', '19', '32768', '1024']
+
+=== CBW table ===
+Columns:
+  ['0', 'MCU_NAME', 'TEXT', '1', None, '0']
+  ['1', 'MCU_TYPE', 'INTEGER', '1', None, '0']
+  ['2', 'MCU_SERIES', 'INTEGER', '1', None, '0']
+  ['3', 'MCU_PINNUM', 'INTEGER', '1', None, '0']
+  ['4', 'MCU_PINVCC', 'INTEGER', '1', None, '0']
+  ['5', 'MCU_PINGND', 'INTEGER', '1', None, '0']
+  ['6', 'MCU_PINDAT', 'INTEGER', '1', None, '0']
+  ['7', 'MCU_PINCLK', 'INTEGER', '1', None, '0']
+  ['8', 'MCU_ROM_SIZE', 'INTEGER', '1', None, '0']
+  ['9', 'MCU_EEPROM_SIZE', 'INTEGER', '1', None, '0']
+
+CBW data:
+Columns: ['MCU_NAME', 'MCU_TYPE', 'MCU_SERIES', 'MCU_PINNUM', 'MCU_PINVCC', 'MCU_PINGND', 'MCU_PINDAT', 'MCU_PINCLK', 'MCU_ROM_SIZE', 'MCU_EEPROM_SIZE']
+  ['BW1F08WA', '0x3818', '11', '16', '16', '1', '15', '14', '8192', '64']
+  ['BW1F32WB', '0', '2049', '20', '6', '3', '18', '19', '16384', '0']
+
+=== CJY table ===
+Columns:
+  ['0', 'MCU_NAME', 'TEXT', '1', None, '0']
+  ['1', 'MCU_TYPE', 'INTEGER', '1', None, '0']
+  ['2', 'MCU_SERIES', 'INTEGER', '1', None, '0']
+  ['3', 'MCU_PINNUM', 'INTEGER', '1', None, '0']
+  ['4', 'MCU_PINVCC', 'INTEGER', '1', None, '0']
+  ['5', 'MCU_PINGND', 'INTEGER', '1', None, '0']
+  ['6', 'MCU_PINDAT', 'INTEGER', '1', None, '0']
+  ['7', 'MCU_PINCLK', 'INTEGER', '1', None, '0']
+  ['8', 'MCU_ROM_SIZE', 'INTEGER', '1', None, '0']
+  ['9', 'MCU_EEPROM_SIZE', 'INTEGER', '1', None, '0']
+
+CJY data:
+Columns: ['MCU_NAME', 'MCU_TYPE', 'MCU_SERIES', 'MCU_PINNUM', 'MCU_PINVCC', 'MCU_PINGND', 'MCU_PINDAT', 'MCU_PINCLK', 'MCU_ROM_SIZE', 'MCU_EEPROM_SIZE']
+  ['CMS79F221J', '0x3C09', '21', '8', '8', '1', '3', '2', '4096', '128']
+  ['CMS80F251', '0x0107', '1029', '28', '1', '2', '3', '4', '32768', '1024']
+  ['CMS80F252', '0x0906', '1028', '44', '12', '7', '28', '30', '65536', '1024']
+  ['CMS89F23X5', '0x381A', '11', '1', '1', '1', '1', '1', '8192', '0']
+  ['CMS89F2286', '0x200A', '1', '1', '1', '1', '1', '1', '4096', '0']
+
+=== Tables with timing/delay columns ===
+
+=== CKDHM table ===
+Columns:
+  ['0', 'MCU_NAME', 'TEXT', '1', None, '0']
+  ['1', 'MCU_TYPE', 'INTEGER', '1', None, '0']
+  ['2', 'MCU_SERIES', 'INTEGER', '1', None, '0']
+  ['3', 'MCU_PINNUM', 'INTEGER', '1', None, '0']
+  ['4', 'MCU_PINVCC', 'INTEGER', '1', None, '0']
+  ['5', 'MCU_PINGND', 'INTEGER', '1', None, '0']
+  ['6', 'MCU_PINDAT', 'INTEGER', '1', None, '0']
+  ['7', 'MCU_PINCLK', 'INTEGER', '1', None, '0']
+  ['8', 'MCU_ROM_SIZE', 'INTEGER', '1', None, '0']
+  ['9', 'MCU_EEPROM_SIZE', 'INTEGER', '1', None, '0']
+
+CKDHM data:
+Columns: ['MCU_NAME', 'MCU_TYPE', 'MCU_SERIES', 'MCU_PINNUM', 'MCU_PINVCC', 'MCU_PINGND', 'MCU_PINDAT', 'MCU_PINCLK', 'MCU_ROM_SIZE', 'MCU_EEPROM_SIZE']
+  ['KDHM8F3K8', '0x0C0D', '1035', '32', '6', '4', '5', '22', '65536', '4096']
+  ['KDHM8F2K6', '0x0306', '1028', '32', '3', '32', '27', '26', '32768', '1024']
+
+=== Table row counts ===
+  AINTER: 3 rows
+  CAK: 1 rows
+  CBD: 2 rows
+  CBSD: 3 rows
+  CBSHX: 2 rows
+  CBW: 2 rows
+  CCM: 2 rows
+  CCX: 6 rows
+  CFC: 21 rows
+  CFC_INT: 1 rows
+  CFMT: 1 rows
+  CFY: 3 rows
+  CHR: 2 rows
+  CHR_ONLINE: 10 rows
+  CISW: 2 rows
+  CJDZ: 1 rows
+  CJHX: 4 rows
+  CJX: 1 rows
+  CJY: 30 rows
+  CJY2025: 19 rows
+  CJYSZ: 5 rows
+  CKDHM: 2 rows
+  CLGT: 1 rows
+  CMC: 2 rows
+  CMIDEA_HOME: 4 rows
+  CMIDEA_SH: 16 rows
+  CMIDEA_SH_FCH: 15 rows
+  CMIDEA_WQ_BARCODE: 5 rows
+  COPPO: 8 rows
+  CQZCX: 3 rows
+  CRS: 1 rows
+  CSHWS: 11 rows
+  CSUPOR: 4 rows
+  CTTI: 12 rows
+  CWT: 1 rows
+  CWXJH: 1 rows
+  CXET: 1 rows
+  CXYD: 52 rows
+  HCS: 1 rows
+  IDE_TEST: 5 rows
+  MCU: 412 rows
+  MCU_INTER: 7 rows
+  PBT: 35 rows
+  SCMCU: 58 rows
+  SCMCU_DELETE: 35 rows
+  SCMCU_IDE: 57 rows
+  SCMCU_INTER: 2 rows
+  TABLE_SERIES: 114 rows
+  TABLE_VDDTYPE: 8 rows
+  sqlite_sequence: 2 rows
+  version: 1 rows
+
+=== version table ===
+Columns: ['version']
+  ['1.101']
+
+=== CJDZ table ===
+Columns:
+  ['0', 'MCU_NAME', 'TEXT', '1', None, '0']
+  ['1', 'MCU_TYPE', 'INTEGER', '1', None, '0']
+  ['2', 'MCU_SERIES', 'INTEGER', '1', None, '0']
+  ['3', 'MCU_PINNUM', 'INTEGER', '1', None, '0']
+  ['4', 'MCU_PINVCC', 'INTEGER', '1', None, '0']
+  ['5', 'MCU_PINGND', 'INTEGER', '1', None, '0']
+  ['6', 'MCU_PINDAT', 'INTEGER', '1', None, '0']
+  ['7', 'MCU_PINCLK', 'INTEGER', '1', None, '0']
+  ['8', 'MCU_ROM_SIZE', 'INTEGER', '1', None, '0']
+  ['9', 'MCU_EEPROM_SIZE', 'INTEGER', '1', None, '0']
+
+CJDZ data:
+Columns: ['MCU_NAME', 'MCU_TYPE', 'MCU_SERIES', 'MCU_PINNUM', 'MCU_PINVCC', 'MCU_PINGND', 'MCU_PINDAT', 'MCU_PINCLK', 'MCU_ROM_SIZE', 'MCU_EEPROM_SIZE']
+  ['CA6255M', '0x61FF', '67', '28', '21', '20', '23', '24', '4096', '128']
+
+=== CJX table ===
+Columns:
+  ['0', 'MCU_NAME', 'TEXT', '1', None, '0']
+  ['1', 'MCU_TYPE', 'INTEGER', '1', None, '0']
+  ['2', 'MCU_SERIES', 'INTEGER', '1', None, '0']
+  ['3', 'MCU_PINNUM', 'INTEGER', '1', None, '0']
+  ['4', 'MCU_PINVCC', 'INTEGER', '1', None, '0']
+  ['5', 'MCU_PINGND', 'INTEGER', '1', None, '0']
+  ['6', 'MCU_PINDAT', 'INTEGER', '1', None, '0']
+  ['7', 'MCU_PINCLK', 'INTEGER', '1', None, '0']
+  ['8', 'MCU_ROM_SIZE', 'INTEGER', '1', None, '0']
+  ['9', 'MCU_EEPROM_SIZE', 'INTEGER', '1', None, '0']
+
+CJX data:
+Columns: ['MCU_NAME', 'MCU_TYPE', 'MCU_SERIES', 'MCU_PINNUM', 'MCU_PINVCC', 'MCU_PINGND', 'MCU_PINDAT', 'MCU_PINCLK', 'MCU_ROM_SIZE', 'MCU_EEPROM_SIZE']
+  ['JX01', '0', '2056', '0', '0', '0', '0', '0', '65536', '1536']
+
+============================================================
+DATABASE ANALYSIS COMPLETE
+============================================================
+
+Please share this output for ICSP protocol analysis!
+Focus on any binary/hex data in CXYD, CFMT, CBW, CJY tables.
+
+C:\Users\maxim\Downloads\SCMCU_IDE_V2.00.16\SCMCU_IDE_V2.00.16>
